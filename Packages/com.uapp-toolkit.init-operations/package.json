@@ -1,0 +1,22 @@
+{
+  "name": "com.uapp-toolkit.init-operations",
+  "version": "1.0.0",
+  "displayName": "Init Operations",
+  "description": "Tool for application initialization.",
+  "unity": "2021.3",
+  "license": "MIT",
+  "dependencies": {
+    "com.uapp-toolkit.internet-checker": "1.0.0"
+  },
+  "keywords": [
+    "entryPoint",
+    "initialization",
+    "scripts",
+    "tools"
+  ],
+  "author": {
+    "name": "Surov Volodymyr",
+    "email": "vovkasu@gmail.com"
+  },
+  "samples": []  
+}  

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.uapp-toolkit.internet-checker": "https://github.com/vovkasu/uapp-toolkit-internet-checker.git?path=Packages/com.uapp-toolkit.internet-checker#v1.0.0",
     "com.unity.feature.2d": "2.0.1",
     "com.unity.ide.rider": "3.0.39",
     "com.unity.ide.visualstudio": "2.0.23",

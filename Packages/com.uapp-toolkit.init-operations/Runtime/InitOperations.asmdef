@@ -1,0 +1,16 @@
+{
+    "name": "InitOperations",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f3d979e5bb91f774db5a912f2fcc2629"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

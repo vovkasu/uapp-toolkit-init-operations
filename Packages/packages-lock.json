@@ -1,5 +1,22 @@
 {
   "dependencies": {
+    "com.uapp-toolkit.init-operations": {
+      "version": "file:com.uapp-toolkit.init-operations",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.uapp-toolkit.internet-checker": "1.0.0"
+      }
+    },
+    "com.uapp-toolkit.internet-checker": {
+      "version": "https://github.com/vovkasu/uapp-toolkit-internet-checker.git?path=Packages/com.uapp-toolkit.internet-checker#v1.0.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "2.0.0"
+      },
+      "hash": "e28c48b0e22125d676901d70d9cb10a4a1655e1d"
+    },
     "com.unity.2d.animation": {
       "version": "10.2.1",
       "depth": 1,
