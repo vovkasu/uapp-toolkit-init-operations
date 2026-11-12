@@ -1,6 +1,11 @@
 Changelog
 =========
 
+[1.0.1] - 2026.11.13
+--------------------
+* **Fixed** - Reset loading timings at startup so unfinished operations from a previous Play Mode session do not carry over when Reload Domain is disabled.
+* **Fixed** - Starting an operation with the same name replaces its previous timestamp, and completing it removes the timestamp.
+
 [1.0.0] - 2026.03.05
 --------------------
 * **Added** - Core initialization framework with the following classes:

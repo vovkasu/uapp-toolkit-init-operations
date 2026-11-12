@@ -15,18 +15,16 @@ A comprehensive initialization framework for Unity applications that provides a 
 
 ## Installation
 
-Add the package to your `manifest.json`:
+Add these Git dependencies to your `manifest.json`:
 
 ```json
 {
   "dependencies": {
-    "com.uapp-toolkit.init-operations": "1.0.0",
-    "com.uapp-toolkit.internet-checker": "1.0.0"
+    "com.uapp-toolkit.init-operations": "https://github.com/vovkasu/uapp-toolkit-init-operations.git?path=Packages/com.uapp-toolkit.init-operations#v1.0.1",
+    "com.uapp-toolkit.internet-checker": "https://github.com/vovkasu/uapp-toolkit-internet-checker.git?path=Packages/com.uapp-toolkit.internet-checker#v1.0.0"
   }
 }
 ```
-
-Or use the Git URL in your package manager.
 
 ## Quick Start
 

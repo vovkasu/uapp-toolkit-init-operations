@@ -10,7 +10,13 @@ namespace UAppToolKit.InitOperations
         public static event Action<string, float> OnCompleted;
 
         public static bool IsEnable;
-        private static Dictionary<string, DateTime> _startedAt = new();
+        private static readonly Dictionary<string, DateTime> _startedAt = new();
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void ResetTimings()
+        {
+            _startedAt.Clear();
+        }
 
         public static void Started(string operationName)
         {
@@ -18,7 +24,7 @@ namespace UAppToolKit.InitOperations
                 return;
 
             Debug.Log($"[Start operation] {operationName}");
-            _startedAt.Add(operationName, DateTime.Now);
+            _startedAt[operationName] = DateTime.Now;
             OnStart?.Invoke(operationName);
         }
 
@@ -28,7 +34,7 @@ namespace UAppToolKit.InitOperations
                 return;
 
             var duration = -1f;
-            if (_startedAt.TryGetValue(operationName, out var startedAt))
+            if (_startedAt.Remove(operationName, out var startedAt))
             {
                 duration = (float)(DateTime.Now - startedAt).TotalSeconds;
             }
